@@ -9,7 +9,7 @@ def sum_to(n):
   return solution
 
 # tests for #1
-print('chall #1 tests, expect 21, 55')
+print('chall #1,  expect 21, 55')
 print(sum_to(6))
 print(sum_to(10))
 
@@ -37,3 +37,17 @@ print(occurrences('fleep floop', 'e'))   # returns 2
 print(occurrences('fleep floop', 'p'))   # returns 2
 print(occurrences('fleep floop', 'ee'))  # returns 1
 print(occurrences('fleep floop', 'fe'))  # returns 0
+
+# Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on args.
+
+def product(*args):
+  solution = 1
+  for item in args:
+    solution *= item
+  return solution
+
+# tests for #4
+print('chall #4, expect -4, 50, 10.0')
+print(product(-1, 4)) # returns -4
+print(product(2, 5, 5)) # returns 50
+print(product(4, 0.5, 5)) # returns 10.0
