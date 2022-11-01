@@ -8,7 +8,7 @@ def sum_to(n):
     i += 1
   return solution
 
-# tests
+# tests for #1
 print('chall #1 tests, expect 21, 55')
 print(sum_to(6))
 print(sum_to(10))
@@ -21,8 +21,19 @@ def largest(nums):
   return nums[-1]
 
 
-# tests
+# tests for #2
 print('chall #2, expect 4, 231')
 print(largest([1, 2, 3, 4, 0]))
 print(largest([10, 4, 2, 231, 91, 54]))
 
+# Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
+
+def occurrences(str1, str2):
+  return str1.count(str2)
+
+# tests for #3
+print('chall #3, expect 2,2,1,0')
+print(occurrences('fleep floop', 'e'))   # returns 2
+print(occurrences('fleep floop', 'p'))   # returns 2
+print(occurrences('fleep floop', 'ee'))  # returns 1
+print(occurrences('fleep floop', 'fe'))  # returns 0
